@@ -19,9 +19,9 @@ MEASURED locally with deterministic stub; all dollar columns MODELLED.
 
 | Configuration | Requests | Provider calls / items | Hit rate | Full cost/1k | p50 ms | p95 ms | Requests/s | Quality |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| A baseline | 100 | 100 / 100 | 0% | $1.4755 | 21.42 | 22.18 | 419.1 | 100/100 |
-| B cache | 100 | 40 / 40 | 60% | $1.3702 | 0.35 | 22.44 | 790.1 | 100/100 |
-| C cache + batching | 100 | 4 / 40 | 60% | $1.3702 | 0.44 | 23.69 | 837.2 | 100/100 |
+| A baseline | 100 | 100 / 100 | 0% | $1.4755 | 21.78 | 24.45 | 373.2 | 100/100 |
+| B cache | 100 | 40 / 40 | 60% | $1.3702 | 0.62 | 25.33 | 629.6 | 100/100 |
+| C cache + batching | 100 | 4 / 40 | 60% | $1.3702 | 0.84 | 25.53 | 679.7 | 100/100 |
 
 Raw sorted samples, timestamp, Python version, host and fixture SHA-256 are in
 `evidence/measurements.json`. The previous independently recorded A/B run remains
@@ -51,3 +51,7 @@ p95 means 95% of requests complete at or below that latency; it is not the mean.
 A 1% error budget permits one failed request in this 100-request window, but this
 quality gate is stricter and requires all fixture results to pass. All configurations
 met this local objective. A live service SLO needs a representative sustained test.
+
+The final sweep was rerun after enabling INFO JSON event output; the earlier sweep
+is preserved in `evidence/measurements_pre_logging.json`. This is an instrumentation
+change, so the table uses the final run rather than comparing timings across builds.

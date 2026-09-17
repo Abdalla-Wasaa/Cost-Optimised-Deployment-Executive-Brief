@@ -1,0 +1,16 @@
+{
+  "requests": 100,
+  "errors": 0,
+  "cache_hits": 60,
+  "cache_misses": 40,
+  "cache_hit_rate": 0.6,
+  "provider_calls": 40,
+  "provider_items": 40,
+  "reserved_modelled_usd": 0.00702,
+  "avoided_modelled_usd": 0.010530000000000001,
+  "spend_rejections": 0,
+  "batches": 0,
+  "batch_failures": 0,
+  "queue_rejected": 0,
+  "recent_batch_sizes": []
+}

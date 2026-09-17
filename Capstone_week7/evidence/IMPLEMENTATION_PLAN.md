@@ -23,3 +23,11 @@ Cloud deployment/screenshots and live provider validation require manual evidenc
 GitHub CLI token reports invalid. Use focused stacked local branches with tested
 commits and PR notes if remote publishing is unavailable; do not claim PRs or CI
 runs occurred. A real empty remote needs main published before opening PR 1.
+
+## Workflow correction after network verification
+The initial authentication check ran under restricted DNS and misleadingly reported
+an invalid token. A later network-enabled check succeeded. Focused branches had
+already been prepared locally; these are integrated with updated main and published
+as sequential real PRs. GitHub checks must pass before each merge. No credential
+from classwork was used. Generic repository-local commit identity is Capstone
+Engineering <capstone@users.noreply.github.com>; no personal identity was invented.
