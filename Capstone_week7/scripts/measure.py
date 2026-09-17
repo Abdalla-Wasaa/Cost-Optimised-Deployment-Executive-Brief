@@ -14,8 +14,8 @@ from api.main import create_app
 from levers.cache_hitrate import workload, FIXTURE
 from cost.cost_model import load, calculate, token_cost
 
-async def measure(name, cache):
-    app=create_app(Settings(cache_enabled=cache))
+async def measure(name, cache, batch=False):
+    app=create_app(Settings(cache_enabled=cache, batch_enabled=batch))
     rows=workload()
     latencies=[]
     quality=0
@@ -48,7 +48,8 @@ async def measure(name, cache):
             'latencies_ms_sorted':latencies}
 
 async def main(output):
-    results=[await measure('A baseline',False),await measure('B cache',True)]
+    results=[await measure('A baseline',False),await measure('B cache',True),
+             await measure('C cache + batching',True,True)]
     report={'classification':'MEASURED locally with deterministic STUB; costs MODELLED',
             'timestamp_utc':datetime.now(timezone.utc).isoformat(),
             'python':platform.python_version(),'platform':platform.platform(),
@@ -61,5 +62,5 @@ async def main(output):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
-    parser.add_argument('--output',default='evidence/cache_measurements.json')
+    parser.add_argument('--output',default='evidence/measurements.json')
     asyncio.run(main(parser.parse_args().output))
