@@ -1,5 +1,5 @@
 # Decision memo — API-hosted versus self-hosted inference
-**Audience:** Finance and engineering sponsor · **Date:** 17 September 2026  
+**Audience:** Finance and engineering sponsor · **Date:** 17 September 2026
 **Decision:** choose a managed API for a future controlled pilot; retain the free
 stub for this assessed demonstration. No live API or GPU comparison was performed.
 

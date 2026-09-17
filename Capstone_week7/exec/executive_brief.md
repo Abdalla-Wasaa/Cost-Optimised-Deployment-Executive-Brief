@@ -1,6 +1,6 @@
 # Week 7 executive brief: control cost before scaling
 
-**Decision requested:** approve an educational demo and a gated API pilot plan.  
+**Decision requested:** approve an educational demo and a gated API pilot plan.
 **No-go:** clinical use or a self-hosted GPU purchase without further evidence.
 
 The service turns a short symptom message into a structured demo urgency response.
