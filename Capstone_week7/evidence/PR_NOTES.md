@@ -7,7 +7,7 @@ Repository: https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive
 | [1](https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive-Brief/pull/1) | chore/capstone-foundation | API, stub, initial tests and CI | Merged after both CI checks passed |
 | [2](https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive-Brief/pull/2) | feat/cost-model-budget-controls | Cost, deployment, guard | Merged after both CI checks passed |
 | [3](https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive-Brief/pull/3) | feat/exact-match-cache | Cache, gate, independent A/B evidence | Merged after both CI checks passed |
-| 4 | feat/batch-queue | Bounded batch worker and A/B/C evidence | Publication in progress |
+| [4](https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive-Brief/pull/4) | feat/batch-queue | Bounded batch worker and A/B/C evidence | Both CI checks passed; merge requested |
 | 5 | docs/capstone-decision-packet | Memo, executive brief, evidence, reproduction | This packet, publication pending |
 
 Focused implementation commits (merge commits additionally integrate updated main):
@@ -15,6 +15,10 @@ Focused implementation commits (merge commits additionally integrate updated mai
 - `b06673d` feat(finops): add reproducible costs deployment and spend reservations
 - `d5eee2b` feat(cache): add bounded exact cache and measured regression fixture
 - `8988c75` feat(batch): add bounded queue and staged performance evidence
+- `65b1958` docs(memo): explain API versus self-host economics and decision gates
+- `03ea53f` docs(exec): publish reviewed executive PDF and reproducible sources
+- `f8099e7` docs(evidence): map rubric and record reproducible final verification
+- `e6415b3` chore(docs): mark PDF as binary and normalize source whitespace
 
 The remote started empty. An empty main initialization commit established the PR
 base. Initial restricted-network auth failed; after network-enabled auth succeeded,
