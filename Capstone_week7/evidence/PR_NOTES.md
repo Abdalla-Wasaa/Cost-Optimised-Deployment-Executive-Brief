@@ -7,8 +7,8 @@ Repository: https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive
 | [1](https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive-Brief/pull/1) | chore/capstone-foundation | API, stub, initial tests and CI | Merged after both CI checks passed |
 | [2](https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive-Brief/pull/2) | feat/cost-model-budget-controls | Cost, deployment, guard | Merged after both CI checks passed |
 | [3](https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive-Brief/pull/3) | feat/exact-match-cache | Cache, gate, independent A/B evidence | Merged after both CI checks passed |
-| [4](https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive-Brief/pull/4) | feat/batch-queue | Bounded batch worker and A/B/C evidence | Both CI checks passed; merge requested |
-| 5 | docs/capstone-decision-packet | Memo, executive brief, evidence, reproduction | This packet, publication pending |
+| [4](https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive-Brief/pull/4) | feat/batch-queue | Bounded batch worker and A/B/C evidence | Merged after both CI checks passed |
+| [5](https://github.com/Abdalla-Wasaa/Cost-Optimised-Deployment-Executive-Brief/pull/5) | docs/capstone-decision-packet | Memo, executive brief, evidence, reproduction | Final packet PR; current checks and merge state at the linked PR |
 
 Focused implementation commits (merge commits additionally integrate updated main):
 - `60e5ebc` feat(api): establish tested deterministic capstone foundation

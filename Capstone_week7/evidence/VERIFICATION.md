@@ -42,3 +42,8 @@ as passing until an actual remote run succeeds. Secret review checks staged path
 and known credential formats without printing matching values; it cannot certify
 that no possible secret format exists. No .env, virtual environment or classwork
 files are part of this repository.
+
+Final repository-wide review: all local Markdown links resolve; JSON artifacts parse;
+tracked paths are confined to Capstone_week7 and .github; known credential-format
+scan passed for 74 reachable text blobs across history. git diff main --check passed
+after removing Markdown trailing spaces and marking generated PDF as binary.
