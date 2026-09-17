@@ -1,0 +1,14 @@
+{
+  "input_per_million": 0.15,
+  "output_per_million": 0.6,
+  "input_tokens": 450,
+  "output_tokens": 180,
+  "monthly_requests": 100000,
+  "infra_monthly": 30,
+  "ops_hours": 4,
+  "ops_hourly": 25,
+  "selfhost_gpu_monthly": 850,
+  "selfhost_ops_hours": 16,
+  "selfhost_storage_monthly": 50,
+  "selfhost_variable": 5e-05
+}

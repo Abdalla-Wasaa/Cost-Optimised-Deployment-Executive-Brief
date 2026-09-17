@@ -1,0 +1,14 @@
+{
+  "BudgetName": "capstone-week7-monthly",
+  "BudgetLimit": {
+    "Amount": "250",
+    "Unit": "USD"
+  },
+  "TimeUnit": "MONTHLY",
+  "BudgetType": "COST",
+  "CostFilters": {
+    "TagKeyValue": [
+      "user:project$capstone-week7"
+    ]
+  }
+}
