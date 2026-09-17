@@ -1,3 +1,4 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from api.config import Settings
 from api.models import TriageRequest, TriageResponse
@@ -6,7 +7,12 @@ from api.service import TriageService
 def create_app(settings=None, provider=None):
     settings = settings or Settings.from_env()
     service = TriageService(settings, provider)
-    app = FastAPI(title='Week 7 educational triage economics demo')
+    @asynccontextmanager
+    async def lifespan(app):
+        yield
+        await service.close()
+
+    app = FastAPI(title='Week 7 educational triage economics demo', lifespan=lifespan)
     app.state.service = service
     app.state.provider = service.provider
     app.state.guard = service.guard
